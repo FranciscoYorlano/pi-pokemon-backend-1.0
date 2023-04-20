@@ -1,11 +1,5 @@
-const dotenv = require("dotenv");
+require("dotenv").config();
 const { Sequelize } = require("sequelize");
-
-if (process.env.NODE_ENV === "production") {
-    dotenv.config({ path: ".env.production" });
-} else {
-    dotenv.config({ path: ".env.development" });
-}
 
 // ======================== Models requires
 const pokemonDefiner = require("./models/Pokemon");
