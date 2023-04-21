@@ -48,6 +48,7 @@ const getPokemonByIdHandler = async (req, res) => {
 const createNewPokemonHandler = async (req, res) => {
     // -> create new pokemon
     const pokemon = req.body;
+    console.log(pokemon);
 
     try {
         const response = await createNewPokemon(pokemon);
